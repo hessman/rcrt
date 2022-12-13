@@ -200,7 +200,6 @@ export class App {
 
     const promises = []
     let j = 0;
-    console.log(certs.length)
     for (let i = 0; i < certs.length; i++) {
       const handleCertificateRecord = async (
         cert: CrtShItem,

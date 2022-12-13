@@ -218,6 +218,13 @@ function createChart() {
     });
   });
 
+  nodeTemplate.events.on("hit", function (event) {
+    if (event.target && event.target.label && event.target.label.currentText) {
+      const label = event.target.label.currentText
+      navigator.clipboard.writeText(label)
+    }
+  })
+
   nodeTemplate.label.fontSize = circleLabelSize;
   nodeTemplate.label.hideOversized = true;
   nodeTemplate.label.truncate = true;
