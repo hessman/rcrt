@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main > * {
+  width: 100%;
+}
+
+main button#toggle-fullscreen {
+  width: 30px;
+  height: 30px;
+  color: black;
+  padding: 0.25rem 0.3rem;
+  position: absolute;
+  font-size: 18pt;
+  bottom: 20px;
+  z-index: 100;
+  right: 20px;
+}
+
+main h1 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 20px;
+}
+
+.github-link {
+  text-align: center;
+  display: block;
+  padding: 0.5rem;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.command {
+  text-align: center;
+  display: block;
+  padding: 0.5rem;
+  font-size: 15px;
+}
+
+#chartdiv {
+  height: 100%;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+main input[type="radio"] {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 5%;
+}
+
+main label.radio-label,
+main label.date-label {
+  padding: 0.75rem;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 5%;
+}
+
+main label.radio-label {
+  padding-left: 0;
+  margin-right: 0.5rem;
+}
+
+main label.date-label {
+  margin-left: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+main label.date-label:first-of-type {
+  margin-left: 2rem;
+}
+
+main nav {
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+main nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+  padding: 1rem 0;
+}
